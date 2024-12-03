@@ -1,0 +1,11 @@
+[Unit]
+Description=Fancontrol Driver
+
+[Service]
+ExecStart=/usr/bin/python3 /utils/fancontrol.py
+User=root
+Restart=on-failure
+Type=idle
+
+[Install]
+WantedBy=multi-user.target

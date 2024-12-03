@@ -1,0 +1,4 @@
+sudo cp -f ./config.txt /boot/firmware/
+sudo mkdir -p /utils
+sudo cp -f ./fancontrol.py /utils/
+sudo cp -f ./fancontrol.service /etc/systemd/system/
